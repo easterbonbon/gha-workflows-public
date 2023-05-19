@@ -33,3 +33,10 @@ jobs:
       - name: Dance like a frog
         run: |
           echo "Ribbit ribbit ribbit"
+  sandbox_job:
+    runs-on: ubuntu-latest
+    environment: sandbox
+
+    steps:
+      - name: Saying some stuff
+        run: echo "I'm a potato in sandbox land"
